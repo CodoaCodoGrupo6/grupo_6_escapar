@@ -1,0 +1,36 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2b879e;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+img { 
+    width: 30px;
+}
+
+.logo { 
+    width: 80px;
+    
+}
+
+ul {
+    margin-top: 20px;
+    padding: 0px 15px 0px 15px;
+}
+
+li {
+    padding: 0px 15px 0px 15px;
+}
+
+.redes {
+    list-style: none;
+    display: inline;
+}
