@@ -161,15 +161,23 @@
     :hover{
         text-decoration-style: wavy;
     }
-    .Mapa {
-        top: 1500px;
-        left: 900px;
-    }
     .DondeEstamos {
-        top: 1000px;
-        left: 900px;
+        top: 50px;
+        left: 50px;
         position: relative;
     }
+    .Mapa {
+        top: 1000px;
+        left: 900px;
+        position: absolute;
+    }
+    .Donde {
+        top: 1000px;
+        left: 500px;
+        position: absolute; 
+        width: 500px; 
+    }
+
 }
 
 
