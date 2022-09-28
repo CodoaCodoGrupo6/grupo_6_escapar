@@ -3,7 +3,7 @@
 
 
     header {
-        background-color: #2b879e;
+        background-color: #e74115;
         position: fixed;
         height: 13%;
         width: 100%;
@@ -61,7 +61,7 @@
         justify-content: space-around;
         text-align: center;
         font-weight: bold;
-        color:#f3e9c4;
+        color:#fef5c8;
         text-shadow: 2px 2px 4px black;
     
     }
@@ -100,7 +100,7 @@
         height: 110%; /*500px*/
         position: relative;
         z-index: -1;
-        border: 5px solid #626668;
+        border: 5px solid #033750;
         box-shadow: 2px 2px 10px black;
     }
 
@@ -108,8 +108,8 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         font-weight: bolder;
-        color: #9bcfb3;
-        text-shadow: 2px 2px 4px black;
+        color: #00988c;
+        text-shadow: 0px 0px 2px #fef5c8;
         position: absolute;
     }
 
@@ -129,24 +129,13 @@
     }
 
 
-    :link {
-        text-decoration: none;
-        color:#f3e9c4;
-    }
 
-    :visited {
-        text-decoration: none;
-        color:#f3e9c4;
-    }
-    :hover{
-        text-decoration-style: wavy;
-    }
     
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
     footer{
-        background-color: #2b879e;
+        background-color: #e74115;
         height: 87px;
         position: relative;
         top: 850px;
@@ -160,4 +149,29 @@
         left: 40px;
     }
 
+    :link {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+
+    :visited {
+        text-decoration: none;
+        color:#033750;
+    }
+    :hover{
+        text-decoration-style: wavy;
+    }
+    .Mapa {
+        top: 1500px;
+        left: 900px;
+    }
+    .DondeEstamos {
+        top: 1000px;
+        left: 900px;
+        position: relative;
+    }
 }
+
+
+
+
