@@ -76,6 +76,7 @@
     h2{
         font-size: 25px;
         letter-spacing: 4px;
+        z-index: -1;
     }
     
     .destinos {
