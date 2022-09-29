@@ -130,26 +130,34 @@
         left: 72%;
     }
 
-
+    .SobreNosotros{
+        top: 1050px;
+        background-color: red;
+        position: absolute;
+    }  
 
     .DondeEstamos {
-        top: 50px;
+        top: 500px;
         left: 50px;
         position: relative;
     }
+
     .Mapa {
+        position: absolute;
         top: 1000px;
         left: 900px;
-        position: absolute;
+        
     }
+
     .Donde {
+        position: absolute; 
         top: 1000px;
         left: 500px;
-        position: absolute; 
+        
         width: 500px; 
     }
 
-    
+  
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
