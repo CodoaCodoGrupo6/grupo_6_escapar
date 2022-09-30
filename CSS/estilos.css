@@ -49,8 +49,9 @@
 
     body{
         background-image: url('/Imagenes/fondos/fondo1-3.png');
-        position: relative;
         background-size: 100%;
+        position: relative;
+        z-index: -2;
     }
 
     .titulos{
@@ -86,19 +87,41 @@
         top: 350%; 
         left: 13%; 
         display: grid;
-        grid-template-rows: repeat(1,456px);
-        grid-template-columns: repeat(3,500px);
-        /* background-color: red; */
+        grid-template-rows: repeat(1,35em);
+        grid-template-columns: repeat(3,30em);
+        gap: 1em;
         
+        /*background-color: red;*/
     }
-
-    .imgDestino{
-        width: 87%; /*456px*/
-        height: 110%; /*500px*/
+    
+   /* .imgDestino{
+        width: 87%; 456px
+        height: 110%; 500px
         position: relative;
         z-index: -1;
         border: 5px solid #033750;
         box-shadow: 2px 2px 10px black;
+    }*/
+
+    .d1 {
+        background-image: url(../Imagenes/cordoba1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        outline: #033750 auto medium;
+    }
+
+    .d2 {
+        background-image: url(../Imagenes/mendoza1.png);
+        outline: #033750 auto thin;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .d3 {
+        background-image: url(../Imagenes/patagonia1.png);
+        outline: #033750 auto thin;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     
     .d1 {
@@ -121,17 +144,17 @@
 
     .cor {
         top: 5%;
-        left: 20%;
+        left: 7%;
     }
 
     .men {
-        top: 95%;
-        right: 42%;
+        top: 85%;
+        right: 41%;
     }
 
     .pat {
         top: 5%;
-        left: 72%;
+        left: 74%;
     }
 
     .SobreNosotros{
@@ -161,6 +184,8 @@
         top: 500px;
         left: 50px;
         position: relative;
+        display: flex;
+        
     }
 
     .Mapa {
@@ -186,7 +211,8 @@
         background-color: #e74115;
         height: 87px;
         position: relative;
-        top: 1850px;
+        top: 1920px;
+        z-index: 2;
     }
     
     h5{
