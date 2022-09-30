@@ -50,6 +50,7 @@
     body{
         background-image: url('/Imagenes/fondos/fondo1-3.png');
         position: relative;
+        background-size: 100%;
     }
 
     .titulos{
@@ -87,16 +88,10 @@
         display: grid;
         grid-template-rows: repeat(1,456px);
         grid-template-columns: repeat(3,500px);
-        /*background-color: red;*/
+        /* background-color: red; */
+        
     }
 
-    .d1 {
-       /*
-        max-width: 500px;
-        max-height: 400px;*/
-        position: relative;
-    }
-    
     .imgDestino{
         width: 87%; /*456px*/
         height: 110%; /*500px*/
@@ -105,6 +100,15 @@
         border: 5px solid #033750;
         box-shadow: 2px 2px 10px black;
     }
+    
+    .d1 {
+       /*
+        max-width: 500px;
+        max-height: 400px;*/
+        position: relative;
+    }
+    
+
 
     .textoDestino{
         font-family: 'Montserrat', sans-serif;
@@ -131,10 +135,27 @@
     }
 
     .SobreNosotros{
-        top: 1050px;
+        top: 1060%;
+        left: 1%;
+        margin: 0% 11% 0% 12%;
         background-color: red;
         position: absolute;
+        border-width: 12%;
+        border-color: aqua;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 2%;
     }  
+
+    h3{
+        font-weight: bolder;
+        font-size: 50px;
+        margin-bottom: 3% ;
+    }
+
+    .textoSobreNosotros{
+        font-size: 30px;
+    }
 
     .DondeEstamos {
         top: 500px;
