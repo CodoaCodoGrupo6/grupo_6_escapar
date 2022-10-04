@@ -1,50 +1,45 @@
 @media (max-width: 1920px){
     /*Encabezado de la Página*/
 
-
-    header {
+    .grid-header {
         background-color: #e74115;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,40em);
+        grid-template-rows: repeat(1,8em);
+        align-items: center;
         position: fixed;
-        height: 13%;
-        width: 100%;
         z-index: 2;
-        
     }
 
     .logo { 
-        position: fixed;
-        width: 7%;
-        left: 8%;
-        top: -1%;
+        margin-left: 3em;
     }
 
-    ul {
-        /*background-color: blue;*/
-        display: inline-block;
-        position: fixed;
-        left: 45%;
-        top: 2%;
-        
-    }
-
-    img { 
-        width: 50px;
+    .logo-img { 
+        width: 20%;
     }
 
     .redes {
-        /*background-color: pink;*/
-        display: inline-block;
-        margin: 20px 20px 0 0px;
-        
+        /*background-color: blue;*/
+        display: inline;
+        margin-left: 3em;
     }
 
-    .inicio-sesion{
-        position: fixed;
-        right: 8%;
-        top: 6%;
+    .redes-img {
+        /*background-color: pink;*/
+        height: 4em;
+        width: auto;
+        padding: 1em;
+    }
+
+    .formulario{
         font-size: 20px;
         font-family: 'Montserrat', sans-serif;
+        text-align: right;
+        margin-right: 3em;
     }
+
     /*-------------------------------------------------------------------------------------------------
     Cuerpo de la Página*/
 
@@ -58,8 +53,8 @@
     .titulos{
         font-family: 'Montserrat', sans-serif;
         position: absolute;
-        top: 150%;
-        left: 41%;
+        top: 170%;
+        left: 40.5%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
