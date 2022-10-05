@@ -10,6 +10,7 @@
         align-items: center;
         position: fixed;
         z-index: 2;
+        flex-wrap: wrap;
     }
 
     .logo { 
@@ -62,7 +63,7 @@
         font-weight: bold;
         color:#fef5c8;
         text-shadow: 2px 2px 4px black;
-    
+        flex-wrap: wrap;
     }
 
     h1{
@@ -86,6 +87,7 @@
         grid-template-rows: repeat(1,35em);
         grid-template-columns: repeat(3,30em);
         gap: 1em;
+        flex-wrap: wrap;
         
         /*background-color: red;*/
     }
@@ -163,6 +165,10 @@
         font-family: 'Montserrat', sans-serif;
         padding: 2%;
         color: #033750;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }  
 
     h3{
