@@ -41,11 +41,44 @@
 
     /*-------------------------------------------------------------------------------------------------
     Cuerpo de la Página*/
-.titulo_paquete{
-    
-}
+    .titulo_paquete{
+        position: relative;
+        border-color: black;
+        border-width: 100%;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+
+    }
+    .titulo_cordoba{
+        font-size: 20px;
+        text-align: center;
+        bottom: 500px;
+        color: black;
+        position: absolute;
+    }
+    .imagen_titulo{
+        background-size: 1920px 938px;
+        position: absolute;
 
 
+    }
+    .servicios_incluidos_paquete{
+        display: flexbox;
+        
+    }
+    .itinerario_viaje{
+        display: flexbox;
+    }
+    .boton_me_interesa{
+        display: flexbox;
+    }
+    .imagen_paquete_cordoba{
+        display: flexbox;
+    }
+    .mas_info{
+        display: flexbox;
+    }
 
     
 
