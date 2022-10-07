@@ -2,7 +2,7 @@
     /*Encabezado de la Página*/
 
     .grid-header {
-        background-color: #e74115;
+        background-color: /*#e74115;*/
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3,40em);
@@ -53,7 +53,6 @@
 
     .titulos{
         font-family: 'Montserrat', sans-serif;
-        position: absolute;
         top: 170%;
         left: 40.5%;
         display: flex;
@@ -63,7 +62,7 @@
         font-weight: bold;
         color:#fef5c8;
         text-shadow: 2px 2px 4px black;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     h1{
@@ -79,29 +78,27 @@
         z-index: -1;
     }
     
+    /* Codigo de la parte de Destinos */
+
     .destinos {
-        position: absolute;
-        top: 350%; 
-        left: 13%; 
-        display: grid;
-        grid-template-rows: repeat(1,35em);
-        grid-template-columns: repeat(3,30em);
-        gap: 1em;
+        /* position: absolute; */
+        /* top: 350%; 
+        left: 13%;  */
+        display: flex;
+        /* grid-template-rows: repeat(1,35em); */
+        /* grid-template-columns: repeat(3,30em); */
+        /* gap: 1em; */
         flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
         
-        /*background-color: red;*/
+        position: relative;
     }
     
-   /* .imgDestino{
-        width: 87%; 456px
-        height: 110%; 500px
-        position: relative;
-        z-index: -1;
-        border: 5px solid #033750;
-        box-shadow: 2px 2px 10px black;
-    }*/
 
     .d1 {
+        justify-content: space-around;
         background-image: url(../Imagenes/cordoba1.png);
         background-size: 100%;
         background-repeat: no-repeat;
@@ -109,6 +106,8 @@
     }
 
     .d2 {
+        
+        justify-content: space-around;
         background-image: url(../Imagenes/mendoza1.png);
         outline: #033750 auto thin;
         background-size: 100%;
@@ -116,28 +115,22 @@
     }
 
     .d3 {
+        
+        justify-content: space-around;
         background-image: url(../Imagenes/patagonia1.png);
         outline: #033750 auto thin;
         background-size: 100%;
         background-repeat: no-repeat;
     }
     
-    .d1 {
-       /*
-        max-width: 500px;
-        max-height: 400px;*/
-        position: relative;
-    }
-    
-
-
     .textoDestino{
+        display: flex;
         font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         font-weight: bolder;
         color: #00988c;
         text-shadow: 0px 0px 2px #fef5c8;
-        position: absolute;
+        /* position: absolute; */
     }
 
     .cor {
@@ -155,12 +148,14 @@
         left: 74%;
     }
 
+    /* Codigo Section "Sobre Nosotros" */
+
     .SobreNosotros{
         top: 1060%;
         left: 1%;
         margin: 0 180px 0 225px;
         background-color: #fef5c8;
-        position: absolute;
+        /* position: absolute; */
         border: 5px solid #00988c;
         font-family: 'Montserrat', sans-serif;
         padding: 2%;
@@ -183,51 +178,43 @@
         font-size: 30px;
     }
 
-    .DondeEstamos {
-        top: 300px;
-        left: 50px;
-        position: absolute;
-        
-        
-    }
+    /* ---------------------------------------------------------------------- */
+    /* Codigo de Section "Donde Estamos" */
 
-    .Mapa {
-        position: absolute;
-        top: 1000px;
-        left: 1000px;
-        z-index: 2;
-    }
-
-    .Donde {
-        margin: 0 10px 0 10px;
-        position: relative; 
-        top: 970px;
-        left: 184px;
-        width: 500px; 
-        z-index: 1;
+    .DondeEstamos{
+        display: flex;
+        justify-content: space-around;
         background-color: #fef5c8;
         border: 5px solid #00988c;
-        padding: 10px 969px 470px 0;
+        margin: 0 180px 0 225px;
+        padding: 2%;
+        flex-wrap: wrap;
+        
     }
 
-    h4{
-        text-align: center;
+    .Donde{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+        color: #033750;
+
+    }
+
+    .Donde h4{
         font-size: 40px;
-        position: absolute;
-        left: 200px;
-        top: 50px;
-        font-weight: bolder;
-        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
     }
 
-    .Texto-Donde{
-        text-align: center;
-        font-size: 25px;
-        position: absolute;
-        left: 200px;
-        top: 200px;
-        font-family: 'Montserrat', sans-serif;
+    .Donde p{
+        font-size: 20px;
     }
+
+    .Mapa{
+        flex-grow: initial;
+    }
+
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
@@ -235,14 +222,14 @@
         background-color: #e74115;
         height: 87px;
         position: relative;
-        top: 1920px;
+        /* top: 1920px; */
         z-index: 2;
     }
     
     h5{
         font-size: 20px;
         font-family: 'Montserrat', sans-serif;
-        position: absolute;
+        /* position: absolute; */
         top: 20px;
         left: 40px;
     }
