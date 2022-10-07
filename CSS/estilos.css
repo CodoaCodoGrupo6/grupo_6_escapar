@@ -10,7 +10,6 @@
         align-items: center;
         position: fixed;
         z-index: 2;
-        flex-wrap: wrap;
     }
 
     .logo { 
@@ -217,7 +216,6 @@
         grid-template-rows: repeat(1,5em);
         align-items: center;
         justify-content: space-around;
-        flex-wrap: wrap;
         color:#fef5c8;
         text-shadow: 2px 2px 4px black;
     }
