@@ -1,0 +1,78 @@
+@media (max-width: 1920px){
+    /*Encabezado de la Página*/
+
+    .grid-header {
+        background-color: #e74115;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,40em);
+        grid-template-rows: repeat(1,8em);
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        flex-wrap: wrap;
+    }
+
+    .logo { 
+        margin-left: 3em;
+    }
+
+    .logo-img { 
+        width: 20%;
+    }
+
+    .redes {
+        display: inline;
+        margin-left: 3em;
+    }
+
+    .redes-img {
+        height: 4em;
+        width: auto;
+        padding: 1em;
+    }
+
+    .formulario{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: right;
+        margin-right: 3em;
+    }
+
+    /*-------------------------------------------------------------------------------------------------
+    Cuerpo de la Página*/
+
+    
+
+    /*-------------------------------------------------------------------------------------------------
+    Pie de Página*/
+    footer{
+        background-color: #e74115;
+        height: 87px;
+        position: relative;
+        top: 1920px;
+        z-index: 2;
+    }
+    
+    h5{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
+
+    :link {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+
+    :visited {
+        text-decoration: none;
+        color:#033750;
+    }
+    :hover{
+        text-decoration-style: wavy;
+    }
+
+}
