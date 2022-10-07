@@ -41,6 +41,9 @@
 
     /*-------------------------------------------------------------------------------------------------
     Cuerpo de la Página*/
+    p{
+        color: black;
+    }
     .titulo_paquete{
         position: relative;
         border-color: black;
@@ -50,7 +53,22 @@
         top: 25%;
 
     }
-    .titulo_cordoba{
+    div.contenedor{
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 15em, 10em, 5em;
+        grid-template-rows: repeat(3,5em);
+    }
+    .caja{
+        width: 20em;
+        height: 20em;
+        border: 4px solid black;
+        margin: 15px;
+        text-align: center;
+        float: left;
+    }
+    /*.titulo_cordoba{
         font-size: 20px;
         text-align: center;
         bottom: 500px;
@@ -78,7 +96,7 @@
     }
     .mas_info{
         display: flexbox;
-    }
+    }*/
 
     
 
@@ -88,7 +106,7 @@
         background-color: #e74115;
         height: 87px;
         position: relative;
-        top: 1920px;
+        /*top: 1920px;*/
         z-index: 2;
     }
     
