@@ -52,7 +52,8 @@
 
     body{
         background-image: url('/Imagenes/fondos/fondo1-3.png');
-        background-size: 100%;
+        background-size:cover;
+        background-repeat: no-repeat;
         position: relative;
         z-index: -2;
     }

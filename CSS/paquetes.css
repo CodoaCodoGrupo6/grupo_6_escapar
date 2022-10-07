@@ -18,16 +18,24 @@
     }
 
     .logo-img { 
-        width: 20%;
+        width: 15%;
+    }
+
+    .grid-header ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
     }
 
     .redes {
+        /*background-color: blue;*/
         display: inline;
-        margin-left: 3em;
+       
     }
 
     .redes-img {
-        height: 4em;
+        /*background-color: pink;*/
+        height: 3.5em;
         width: auto;
         padding: 1em;
     }
@@ -102,20 +110,30 @@
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
-    footer{
+
+    .desarrolladores {
         background-color: #e74115;
-        height: 87px;
         position: relative;
-        /*top: 1920px;*/
+        /* top: 1920px; */
         z-index: 2;
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(4,25em);
+        grid-template-rows: repeat(1,5em);
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color:#fef5c8;
+        text-shadow: 2px 2px 4px black;
     }
     
-    h5{
-        font-size: 20px;
-        font-family: 'Montserrat', sans-serif;
-        position: absolute;
-        top: 20px;
-        left: 40px;
+    footer h5{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    footer p {
+        font-size: 1.5em;
     }
 
     :link {
@@ -125,7 +143,7 @@
 
     :visited {
         text-decoration: none;
-        color:#033750;
+        color:#fef5c8;
     }
     :hover{
         text-decoration-style: wavy;
