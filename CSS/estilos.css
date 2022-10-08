@@ -40,10 +40,13 @@
     }
 
     .formulario{
-        font-size: 20px;
+        font-size: 30px;
+        font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         text-align: right;
         margin-right: 3em;
+        text-shadow: 5px 2px 3px #000000;
+        
     }
 
     /*-------------------------------------------------------------------------------------------------
@@ -237,10 +240,12 @@
     footer h5{
         font-size: 2em;
         font-weight: bold;
+        text-shadow: 3px 3px 3px #000000;
     }
 
     footer p {
         font-size: 1.5em;
+        text-shadow: 3px 3px 3px #000000;
     }
 
     :link {
