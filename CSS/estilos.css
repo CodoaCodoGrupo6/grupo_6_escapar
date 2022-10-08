@@ -214,9 +214,12 @@
     }
 
     .Mapa{
-        flex-grow: initial;
         box-shadow: 1px 1px 20px #000000;
         margin: 10px;
+    }
+
+    .mapa1{
+        flex-shrink: 5;
     }
 
 
