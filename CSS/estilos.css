@@ -66,8 +66,8 @@
         font-weight: bold;
         color:#fef5c8;
         text-shadow: 2px 2px 4px black;
-        padding-top: 12em;
-        padding-bottom: 5em;
+        padding-top: 10em;
+        padding-bottom: 3em;
         /* flex-wrap: wrap; */
     }
 
@@ -91,46 +91,59 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
-        height: 22em;
-        position: relative;
+        height: 35em;
+        width: 118em;
+        /* position: relative; */
         padding-bottom: 5em;
+        
     }
-    
 
     .d1 {
-        background-image: url(../Imagenes/cordoba1.png);
+        background-image: url(../Imagenes/destinos/cordoba1.png);
         background-size: 100%;
         background-repeat: no-repeat;
         outline: #033750 auto thin;
-        padding: auto;
+        /* padding: auto; */
+        width: 30em;
     }
 
     .d2 {
 
-        background-image: url(../Imagenes/mendoza1.png);
+        background-image: url(../Imagenes/destinos/mendoza1.png);
         outline: #033750 auto thin;
         background-size: 100%;
         background-repeat: no-repeat;
+        width: 30em;
     }
 
     .d3 {
 
-        background-image: url(../Imagenes/patagonia1.png);
+        background-image: url(../Imagenes/destinos/patagonia2.png);
         outline: #033750 auto thin;
         background-size: 100%;
         background-repeat: no-repeat;
+        width: 30em;
     }
     
     .textoDestino{
         display: flex;
+        justify-content: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         font-weight: bolder;
-        color: #00988c;
-        text-shadow: 0px 0px 2px #fef5c8;
-        margin: 0%;
+        color: #fef5c8;
+        text-shadow: 5px 5px 3px #000000;
+        margin: 4%;
         padding: 0.2em;
-        /* position: absolute; */
+        position: relative;
+    }
+
+    .cor{
+        top: 80%;
+    }
+
+    .pat{
+        top: 80%;
     }
 
     /* Codigo Section "Sobre Nosotros" */
