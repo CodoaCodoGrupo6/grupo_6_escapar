@@ -54,6 +54,7 @@
 
     body{
         background-image: url('/Imagenes/fondos/fondo1-3.png');
+        background-attachment: fixed;
         background-size:cover;
         background-repeat: no-repeat;
         position: relative;
@@ -91,46 +92,43 @@
 
     .destinos {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         justify-content: space-around;
         height: 35em;
-        width: 118em;
-        /* position: relative; */
         padding-bottom: 5em;
         
     }
 
     .d1 {
+        justify-content: space-around;
         background-image: url(../Imagenes/destinos/cordoba1.png);
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: round;
         outline: #033750 auto thin;
-        /* padding: auto; */
+        padding: auto;
         width: 30em;
     }
 
     .d2 {
-
+        justify-content: space-around;
         background-image: url(../Imagenes/destinos/mendoza1.png);
         outline: #033750 auto thin;
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: round;
         width: 30em;
     }
 
     .d3 {
-
+        justify-content: space-around;
         background-image: url(../Imagenes/destinos/patagonia2.png);
         outline: #033750 auto thin;
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: round;
         width: 30em;
     }
     
     .textoDestino{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         font-weight: bolder;
@@ -154,7 +152,7 @@
     .SobreNosotros{
         top: 1060%;
         left: 1%;
-        margin: 0 180px 0 225px;
+        margin: 10px 180px 10px 225px;
         background-color: #fef5c8;
         /* position: absolute; */
         border: 5px solid #00988c;
@@ -171,7 +169,7 @@
     h3{
         font-weight: bolder;
         font-size: 50px;
-        margin-bottom: 2% ;
+        margin-bottom: 4% ;
         text-align: center;
         
     }
@@ -188,7 +186,7 @@
         justify-content: space-around;
         background-color: #fef5c8;
         border: 5px solid #00988c;
-        margin: 0 180px 0 225px;
+        margin: 5px 180px 10px 225px;
         padding: 2%;
         flex-wrap: wrap;
         margin-bottom: 5em;
@@ -207,15 +205,18 @@
     .Donde h4{
         font-size: 3em;
         font-weight: bold;
+        margin: 10px;
     }
 
     .Donde p{
         font-size: 2em;
+        margin: 10px;
     }
 
     .Mapa{
         flex-grow: initial;
         box-shadow: 1px 1px 20px #000000;
+        margin: 10px;
     }
 
 
