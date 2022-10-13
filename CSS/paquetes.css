@@ -50,6 +50,15 @@
     /*-------------------------------------------------------------------------------------------------
     Cuerpo de la Página*/
 
+    body{
+        background-image: url('/Imagenes/fondos/fondo1-3.png');
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -2;
+    }
+
     .titulo_paquete{
         font-family: 'Montserrat', sans-serif;
         display: flex;
@@ -57,14 +66,29 @@
         justify-content: space-around;
         text-align: center;
         font-weight: bold;
-        color: black;
+        color: #fef5c8;
         text-shadow: 2px 5px 10px black;
-        padding-top: 10em;
-        padding-bottom: 3em;
+        padding-top: 12em;
+        padding-bottom: 2em;
 
     }
+
+    h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        z-index: -1;
+    }
+
+    h2{
+        font-size: 25px;
+        letter-spacing: 4px;
+        z-index: -1;
+    }
+
     div.contenedor{
         margin-top: 1em;
+        margin-bottom: 3em;
         display: grid;
         grid-template-columns: repeat(5, 20em);
         justify-content: center;
@@ -138,10 +162,10 @@
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
 
-    /*.desarrolladores {
+    .desarrolladores {
         background-color: #e74115;
         position: relative;
-        /* top: 1920px; 
+        /*top: 1920px; */
         z-index: 2;
         font-family: 'Montserrat', sans-serif;
         display: grid;
@@ -163,7 +187,7 @@
         font-size: 1.5em;
         color:#fef5c8;
     }
-*/
+
     :link {
         text-decoration: none;
         color:#fef5c8;
