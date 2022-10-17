@@ -28,13 +28,11 @@
     }
 
     .redes {
-        /*background-color: blue;*/
         display: inline;
        
     }
 
     .redes-img {
-        /*background-color: pink;*/
         height: 3.5em;
         width: auto;
         padding: 1em;
@@ -159,38 +157,6 @@
     .boton-caja6{
         margin-top: 9%;
     }
-    
-    /*.titulo_cordoba{
-        font-size: 20px;
-        text-align: center;
-        bottom: 500px;
-        color: black;
-        position: absolute;
-    }
-    .imagen_titulo{
-        background-size: 1920px 938px;
-        position: absolute;
-
-
-    }
-    .servicios_incluidos_paquete{
-        display: flexbox;
-        
-    }
-    .itinerario_viaje{
-        display: flexbox;
-    }
-    .boton_me_interesa{
-        display: flexbox;
-    }
-    .imagen_paquete_cordoba{
-        display: flexbox;
-    }
-    .mas_info{
-        display: flexbox;
-    }*/
-
-    
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
@@ -198,7 +164,6 @@
     .desarrolladores {
         background-color: #e74115;
         position: relative;
-        /*top: 1920px; */
         z-index: 2;
         font-family: 'Montserrat', sans-serif;
         display: grid;

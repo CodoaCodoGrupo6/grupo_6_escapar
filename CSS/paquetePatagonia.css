@@ -1,0 +1,202 @@
+@media (max-width: 1920px){
+    /*Encabezado de la Página*/
+
+    .grid-header {
+        background-color: #e74115;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,40em);
+        grid-template-rows: repeat(1,8em);
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+        flex-wrap: wrap;
+    }
+
+    .logo { 
+        margin-left: 3em;
+    }
+
+    .logo-img { 
+        width: 15%;
+    }
+
+    .grid-header ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .redes {
+        display: inline;
+       
+    }
+
+    .redes-img {
+        height: 3.5em;
+        width: auto;
+        padding: 1em;
+    }
+
+    .formulario{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: right;
+        margin-right: 3em;
+    }
+
+    /*-------------------------------------------------------------------------------------------------
+    Cuerpo de la Página*/
+
+    body{
+        background-image: url('../Imagenes/fondos/fondo1-3.png');
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -2;
+    }
+
+    .titulo_paquete{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        font-weight: bold;
+        color: #fef5c8;
+        text-shadow: 2px 5px 10px black;
+        padding-top: 12em;
+        padding-bottom: 2em;
+
+    }
+
+    h1{
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        z-index: -1;
+    }
+
+    h2{
+        font-size: 25px;
+        letter-spacing: 4px;
+        z-index: -1;
+    }
+
+    div.contenedor{
+        margin-top: 1em;
+        margin-bottom: 3em;
+        display: grid;
+        grid-template-columns: repeat(5, 20em);
+        justify-content: center;
+        grid-template-rows: repeat(4, 10em);
+        
+    }
+
+    .caja{
+        margin: 2%;
+        background-color: #fef5c8;
+        border: solid black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        border: 3px solid #00988c;
+    }
+
+    .c1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .texto-caja1{
+        margin-top: 20%;
+    }
+
+    .c2{
+        background-image: url("../Imagenes/Paquetes/Paquete_patagonia.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+
+    .c3{
+        margin: 4% 2% 4% 2%;
+        grid-column: 5/6;
+        grid-row: 1/5;
+    }
+
+    .texto-caja3{
+        margin-top: 85%;
+    }
+    .c4{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .texto-caja4{
+        margin-top: 7%;
+    }
+
+    .c5{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .texto-caja5{
+        margin-top: 10%;
+    }
+
+    .c6{
+        grid-column: 3/5;
+        grid-row: 4/5;
+    }
+
+    .boton-caja6{
+        margin-top: 9%;
+    }
+
+    /*-------------------------------------------------------------------------------------------------
+    Pie de Página*/
+
+    .desarrolladores {
+        background-color: #e74115;
+        position: relative;
+        z-index: 2;
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(4,25em);
+        grid-template-rows: repeat(1,5em);
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color:#fef5c8;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    footer h5{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    footer p {
+        font-size: 1.5em;
+        color:#fef5c8;
+    }
+
+    :link {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+
+    :visited {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+    :hover{
+        text-decoration-style: wavy;
+    }
+
+}
