@@ -79,7 +79,7 @@
         text-shadow: 2px 5px 10px black;
         padding-top: 10em;
         padding-bottom: 3em;
-        /* flex-wrap: wrap; */
+        
     }
 
     h1{
@@ -185,7 +185,6 @@
         left: 1%;
         margin: 10px 180px 10px 225px;
         background-color: #fef5c8;
-        /* position: absolute; */
         border: 5px solid #00988c;
         font-family: 'Montserrat', sans-serif;
         padding: 2%;

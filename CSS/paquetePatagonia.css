@@ -39,10 +39,20 @@
     }
 
     .formulario{
-        font-size: 20px;
+        font-size: 30px;
+        font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         text-align: right;
-        margin-right: 3em;
+        text-shadow: 5px 2px 3px #000000;
+        text-align: center;
+    }
+
+    @media (hover: hover){
+        
+        #form:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 35px;
+        }
     }
 
     /*-------------------------------------------------------------------------------------------------
@@ -171,7 +181,6 @@
         grid-template-rows: repeat(1,5em);
         align-items: center;
         justify-content: space-around;
-        flex-wrap: wrap;
         color:#fef5c8;
         text-shadow: 2px 2px 4px black;
     }
@@ -179,11 +188,31 @@
     footer h5{
         font-size: 2em;
         font-weight: bold;
+        text-shadow: 3px 3px 3px #000000;
     }
 
-    footer p {
+    footer a {
         font-size: 1.5em;
-        color:#fef5c8;
+        text-shadow: 3px 3px 3px #000000;
+        text-align: center;
+    }
+
+    @media (hover: hover){
+        
+        #mar:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    
+        #mel:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    
+        #sha:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
     }
 
     :link {
