@@ -44,9 +44,16 @@
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         text-align: right;
-        margin-right: 3em;
         text-shadow: 5px 2px 3px #000000;
+        text-align: center;
+    }
+
+    @media (hover: hover){
         
+        #form:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 35px;
+        }
     }
 
     /*-------------------------------------------------------------------------------------------------
@@ -88,6 +95,7 @@
         z-index: -1;
     }
     
+    /*--------------------------------------------------------------------------*/
     /* Codigo de la parte de Destinos */
 
     .destinos {
@@ -147,6 +155,29 @@
         top: 80%;
     }
 
+    @media (hover: hover){
+        
+        #d1:hover{
+            box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+            border-color: #ffffff;
+            
+            
+        }
+    
+        #d2:hover{
+            box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+            border-color: #ffffff;
+            
+        }
+    
+        #d3:hover{
+            box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
+            border-color: #ffffff;
+            
+        }
+    }
+
+    /*-----------------------------------------------------------*/
     /* Codigo Section "Sobre Nosotros" */
 
     .SobreNosotros{
@@ -229,7 +260,6 @@
     .desarrolladores {
         background-color: #e74115;
         position: relative;
-        /* top: 1920px; */
         z-index: 2;
         font-family: 'Montserrat', sans-serif;
         display: grid;
@@ -247,9 +277,28 @@
         text-shadow: 3px 3px 3px #000000;
     }
 
-    footer p {
+    footer a {
         font-size: 1.5em;
         text-shadow: 3px 3px 3px #000000;
+        text-align: center;
+    }
+
+    @media (hover: hover){
+        
+        #mar:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    
+        #mel:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    
+        #sha:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
     }
 
     :link {
