@@ -1,0 +1,158 @@
+@media (max-width: 1920px){
+    /*Encabezado de la Página*/
+
+    .grid-header {
+        background-color: #e74115;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,40em);
+        grid-template-rows: repeat(1,8em);
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .logo { 
+        margin-left: 3em;
+    }
+
+    .logo-img { 
+        width: 15%;
+    }
+
+    .grid-header ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .redes {
+        display: inline;
+    }
+
+    .redes-img {
+        height: 3.5em;
+        width: auto;
+        padding: 1em;
+    }
+
+    .form{
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-align: right;
+        text-shadow: 5px 2px 3px #000000;
+        text-align: center;
+    }
+
+    @media (hover: hover){
+        
+        #form:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 35px;
+        }
+    }
+
+    /*-------------------------------------------------------------------------------------------------
+    Cuerpo de la Página*/
+
+    body{
+        background-image: url('/Imagenes/fondos/fondo1-3.png');
+        background-attachment: fixed;
+        background-size:cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: -2;
+    }
+
+    .formulario{
+        margin: 0px 180px 10px 225px;
+        background-color: #fef5c8;
+        border: 5px solid #00988c;
+        font-family: 'Montserrat', sans-serif;
+        padding: 2%;
+        color: #033750;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 5em;
+    }  
+
+    h3{
+        font-weight: bolder;
+        font-size: 50px;
+        margin-bottom: 4% ;
+        text-align: center;
+        
+    }
+
+    .textoSobreNosotros{
+        font-size: 30px;
+    }
+
+
+    /*-------------------------------------------------------------------------------------------------
+    Pie de Página*/
+
+    .desarrolladores {
+        background-color: #e74115;
+        position: relative;
+        z-index: 2;
+        font-family: 'Montserrat', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(4,25em);
+        grid-template-rows: repeat(1,5em);
+        align-items: center;
+        justify-content: space-around;
+        color:#fef5c8;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    footer h5{
+        font-size: 2em;
+        font-weight: bold;
+        text-shadow: 3px 3px 3px #000000;
+    }
+
+    footer a {
+        font-size: 1.5em;
+        text-shadow: 3px 3px 3px #000000;
+        text-align: center;
+    }
+
+    @media (hover: hover){
+        
+        #mar:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    
+        #mel:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    
+        #sha:hover{
+            text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
+            font-size: 2em;
+        }
+    }
+
+    :link {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+
+    :visited {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+    :hover{
+        text-decoration-style: wavy;
+    }
+}
+
+
+
+
