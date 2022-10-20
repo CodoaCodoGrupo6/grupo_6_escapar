@@ -59,18 +59,81 @@
 
             <div class="titulos">
                 <h1>Formulario de contacto</h1>
-                <h2>Programá tus mejores vacaciones</h2>
+                
             </div>
 
-            <section class="formulario">
+            <section class="contenedor">
 
-                <div>
-                    <h3>Sobre Nosotros</h3>
+                <div class="titulo-form">
+                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
                 </div>
 
-                <div class="textoSobreNosotros">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi accusantium at, pariatur earum doloremque cumque, praesentium corporis laboriosam quas exercitationem incidunt, error qui quasi odit enim similique. Iure, consectetur perspiciatis.</p>
-                </div>
+                <form class="formulario">
+
+                    <div class="campos">
+                        <p>
+                            <span class="obligatorio">*</span>
+                            Los campos son obligatorios
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">Nombre
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">Apellido
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">E-mail
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">Telefono
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">Paquete de Viaje
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">Asunto
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </p>
+                    </div>
+                    <div class="campos">
+                        <p>
+                            <label class="name">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label><br>
+                            <textarea type="text" class="textarea" required="obligatorio" placeholder="Escribe tu mensaje..."></textarea>
+                        </p>
+                    </div>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>
 
             </section>
 

@@ -86,38 +86,44 @@
         z-index: -1;
     }
 
-    h2{
-        font-size: 25px;
-        letter-spacing: 4px;
-        z-index: -1;
-    }
-
-    .formulario{
-        margin: 0px 180px 10px 225px;
+    .contenedor{
+        margin: 0% 35% 5%;
         background-color: #fef5c8;
-        border: 5px solid #00988c;
+        border: 5px solid #033750;
         font-family: 'Montserrat', sans-serif;
-        padding: 2%;
+        padding: 1%;
         color: #033750;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-bottom: 5em;
+        border-radius: 10px;
     }  
 
     h3{
         font-weight: bolder;
-        font-size: 50px;
+        font-size: 20px;
         margin-bottom: 4% ;
         text-align: center;
         
     }
 
-    .textoSobreNosotros{
-        font-size: 30px;
+    .campos{
+        margin: 1% 0 1% 0;
     }
 
+    .name{
+        margin: 1% 0 0 0;
+        text-align: left;
+    }
+
+    .input{
+        border: 2px solid #033750;
+        padding: 1%;
+    }
+
+    .textarea{
+        border: 2px solid #033750;
+        padding: 1%;
+    }
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
