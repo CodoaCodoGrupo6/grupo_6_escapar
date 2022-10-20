@@ -33,7 +33,7 @@
     }
 
     .redes-img {
-        height: 3.5em;
+        height: 5.5em;
         width: auto;
         padding: 1em;
     }
@@ -52,6 +52,7 @@
         #form:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 35px;
+            color:#fef5c8;
         }
     }
 
@@ -164,8 +165,18 @@
         grid-row: 4/5;
     }
 
-    .boton-caja6{
-        margin-top: 9%;
+    .btn-primary{
+        margin-top: 8%;
+        background-color: #033750;
+        color: #fef5c8;
+        border-color: #033750;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active    {
+        background-color: #e74115;
+        color: #FFF;
+        border-color: #e74115;
     }
 
     /*-------------------------------------------------------------------------------------------------
@@ -202,16 +213,19 @@
         #mar:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 2em;
+            color:#fef5c8;
         }
     
         #mel:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 2em;
+            color:#fef5c8;
         }
     
         #sha:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 2em;
+            color:#fef5c8;
         }
     }
 

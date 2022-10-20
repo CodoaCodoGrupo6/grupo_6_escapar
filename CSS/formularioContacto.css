@@ -27,11 +27,14 @@
     }
 
     .redes {
+        /*background-color: blue;*/
         display: inline;
+       
     }
 
     .redes-img {
-        height: 3.5em;
+        /*background-color: pink;*/
+        height: 5.5em;
         width: auto;
         padding: 1em;
     }
@@ -40,7 +43,6 @@
         font-size: 30px;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
-        text-align: right;
         text-shadow: 5px 2px 3px #000000;
         text-align: center;
     }
@@ -50,6 +52,7 @@
         #form:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 35px;
+            color:#fef5c8;
         }
     }
 
@@ -108,10 +111,12 @@
 
     .campos{
         margin: 1% 0 1% 0;
+        font-size: 20px;
+        text-align: center;
     }
 
     .name{
-        margin: 1% 0 0 0;
+        margin: 1% 0 1% 0;
         text-align: left;
     }
 
@@ -124,6 +129,22 @@
         border: 2px solid #033750;
         padding: 1%;
     }
+
+    .btn-primary {
+        background-color: #033750;
+        color: #fef5c8;
+        border-color: #033750;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active    {
+        background-color: #e74115;
+        color: #FFF;
+        border-color: #e74115;
+    }
+  
+
+    
 
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
@@ -159,16 +180,19 @@
         #mar:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 2em;
+            color:#fef5c8;
         }
     
         #mel:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 2em;
+            color:#fef5c8;
         }
     
         #sha:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 2em;
+            color:#fef5c8;
         }
     }
 

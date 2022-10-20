@@ -39,11 +39,10 @@
         padding: 1em;
     }
 
-    .formulario{
+    .form{
         font-size: 30px;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
-        text-align: right;
         text-shadow: 5px 2px 3px #000000;
         text-align: center;
     }
@@ -53,6 +52,7 @@
         #form:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
             font-size: 35px;
+            color:#fef5c8;
         }
     }
 
