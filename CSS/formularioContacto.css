@@ -65,6 +65,33 @@
         z-index: -2;
     }
 
+    .titulos{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        font-weight: bold;
+        color:#fef5c8;
+        text-shadow: 2px 5px 10px black;
+        padding-top: 10em;
+        padding-bottom: 3em;
+        
+    }
+
+    h1{
+        font-size: 80px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        z-index: -1;
+    }
+
+    h2{
+        font-size: 25px;
+        letter-spacing: 4px;
+        z-index: -1;
+    }
+
     .formulario{
         margin: 0px 180px 10px 225px;
         background-color: #fef5c8;
