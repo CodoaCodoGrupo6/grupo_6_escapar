@@ -126,19 +126,20 @@
     .input{
         border: 2px solid #033750;
         padding: 1%;
-        width: 70%;
+        width: 72%;
 
     }
 
     .textarea{
         border: 2px solid #033750;
         padding: 1%;
+        resize: none;
     }
 
     .selectText{
-        width: 70%;
         border: 2px solid #033750;
         padding: 1%;
+        width: 72%;
     }
 
     .btn-primary {
