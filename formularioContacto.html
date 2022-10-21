@@ -72,7 +72,7 @@
                 <div class="cuerpo-form">
                 <form class="formulario">
 
-                    <div class="campos">
+                    <div class="campoObligatorio">
                         <p>
                             <span class="obligatorio">*</span>
                             Los campos son obligatorios
@@ -91,7 +91,7 @@
                             <label class="name">Apellido
                                 <span class="obligatorio">*</span>
                             </label><br>
-                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu apellido"><br>
                         </p>
                     </div>
                     <div class="campos">
@@ -99,7 +99,7 @@
                             <label class="name">E-mail
                                 <span class="obligatorio">*</span>
                             </label><br>
-                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu e-mail"><br>
                         </p>
                     </div>
                     <div class="campos">
@@ -107,7 +107,7 @@
                             <label class="name">Telefono
                                 <span class="obligatorio">*</span>
                             </label><br>
-                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu telefono"><br>
                         </p>
                     </div>
                     <div class="campos">
@@ -115,7 +115,12 @@
                             <label class="name">Paquete de Viaje
                                 <span class="obligatorio">*</span>
                             </label><br>
-                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                            <select id="selectText" class="selectText" name="destiny" required="obligatorio" placeholder="Escribe tu telefono">
+                                <option disabled selected value="selection">Seleccione un paquete</option>
+                                <option value="cordoba">Cordoba</option>
+                                <option value="mendoza">Mendoza</option>
+                                <option value="patagonia">Patagonia</option>
+                              </select>
                         </p>
                     </div>
                     <div class="campos">
@@ -129,7 +134,7 @@
                         <p>
                             <label class="name">Mensaje
                             </label><br>
-                            <textarea type="text" class="textarea" required="obligatorio" placeholder="Escribe tu mensaje..."></textarea>
+                            <textarea type="text" class="textarea" required="obligatorio" placeholder="Escribe tu mensaje..." rows="6" cols="22"></textarea>
                         </p>
                     </div>
                     <div class="campos">
