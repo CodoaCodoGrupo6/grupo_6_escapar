@@ -112,18 +112,18 @@
         text-align: start;
     }
 
-    .campos{
+    .formulario__grupo{
         margin: 1% 0 2% 0;
         font-size: 20px;
         padding-left: 25%;
     }
 
-    .name{
+    .fomulario__label{
         margin-bottom: 2%;
         text-align: left;
     }
 
-    .input{
+    .formulario__input{
         border: 2px solid #033750;
         padding: 1%;
         width: 72%;
@@ -158,8 +158,32 @@
         color: #FFF;
         border-color: #e74115;
     }
-  
 
+
+    /* -------------- Estilos para la validacion -----------*/
+  
+    .formulario__grupo-correcto .formulario__validacion-estado{
+        color: green;
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .formulario__grupo-correcto .fomulario__label{
+        color: green;
+    }
+
+    .formulario__grupo-incorrecto .fomulario__label{
+        color: red;
+    }
+
+    .formulario__grupo-incorrecto .formulario__validacion-estado{
+        color: red;
+        opacity: 1;
+    }
+
+    .formulario__grupo-incorrecto .formulario__input{
+        border: 3px solid red;
+    }
     
 
     /*-------------------------------------------------------------------------------------------------

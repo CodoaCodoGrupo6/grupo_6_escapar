@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="cuerpo-form">
-                <form class="formulario">
+                <form class="formulario" id="formulario" >
 
                     <div class="campoObligatorio">
                         <p>
@@ -79,67 +79,75 @@
                             Los campos son obligatorios
                         </p>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">Nombre
-                                <span class="obligatorio">*</span>
-                            </label><br>
-                            <input type="text" class="input" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"><br>
-                        </p>
+                    <!-- Nombre -->
+                    <div class="formulario__grupo" id="campo-nombre">
+                        <label class="fomulario__label">Nombre
+                            <span class="obligatorio">*</span>
+                        </label><br>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i> 
+                        </div>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">Apellido
-                                <span class="obligatorio">*</span>
-                            </label><br>
-                            <input type="text" class="input" id="apellido" required="obligatorio" placeholder="Escribe tu apellido"><br>
-                        </p>
+                    <!-- apellido -->
+                    <div class="formulario__grupo" id="campo-apellido">
+                        <label class="fomulario__label">Apellido
+                            <span class="obligatorio">*</span>
+                        </label><br>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="apellido" class="formulario__input" id="apellido" required="obligatorio" placeholder="Escribe tu apellido"><br>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i> 
+                        </div>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">E-mail
-                                <span class="obligatorio">*</span>
-                            </label><br>
-                            <input type="text" class="input" id="e-mail" required="obligatorio" placeholder="Escribe tu e-mail"><br>
-                        </p>
+                    
+                    <div class="formulario__grupo" id="campo-email">
+                        <label class="fomulario__label">E-mail
+                            <span class="obligatorio">*</span>
+                        </label><br>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="email" class="formulario__input" id="e-mail" required="obligatorio" placeholder="Escribe tu e-mail"><br>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i> 
+                        </div>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">Telefono
-                                <span class="obligatorio">*</span>
-                            </label><br>
-                            <input type="text" class="input" id="telefono" required="obligatorio" placeholder="Escribe tu telefono"><br>
-                        </p>
+                    <div class="formulario__grupo" id="campo-telefono">
+                        <label class="fomulario__label">Telefono
+                            <span class="obligatorio">*</span>
+                        </label><br>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="telefono" class="formulario__input" id="telefono" required="obligatorio" placeholder="Escribe tu telefono"><br>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i> 
+                        </div>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">Paquete de Viaje
-                                <span class="obligatorio">*</span>
-                            </label><br>
+                    <div class="formulario__grupo" id="campo-paquete">
+                        <label class="fomulario__label">Paquete de Viaje
+                            <span class="obligatorio">*</span>
+                        </label><br>
+                        <div class="formulario__grupo-select">
                             <select id="selectText" class="selectText" name="destiny" required="obligatorio" placeholder="Escribe tu telefono">
                                 <option disabled selected value="selection">Seleccione un paquete</option>
                                 <option value="cordoba">Córdoba</option>
                                 <option value="mendoza">Mendoza</option>
                                 <option value="patagonia">Patagonia</option>
-                              </select>
-                        </p>
+                            </select>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i> 
+                        </div>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">Asunto
-                            </label><br>
-                            <input type="text" class="input" required="obligatorio" placeholder="Escribe tu nombre"><br>
-                        </p>
+                    <div class="formulario__grupo" id="campo-asunto">
+                        <label class="fomulario__label">Asunto
+                        </label><br>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="asunto" class="formulario__input" required="obligatorio" placeholder="Escribe tu nombre"><br>
+                        </div>
                     </div>
-                    <div class="campos">
-                        <p>
-                            <label class="name">Mensaje
-                            </label><br>
-                            <textarea type="text" class="textarea" required="obligatorio" placeholder="Escribe tu mensaje..." rows="6" cols="23"></textarea>
-                        </p>
+                    <div class="formulario__grupo" id="campo-mensaje">
+                        <label class="fomulario__label">Mensaje
+                        </label><br>
+                        <div class="formulario__grupo-text">
+                            <textarea type="text" name="mensaje" class="textarea" required="obligatorio" placeholder="Escribe tu mensaje..." rows="6" cols="23"></textarea>
+                        </div>
                     </div>
-                    <div class="campos">
-                        <button type="button" class="btn btn-primary" onclick="validarFormulario()">Enviar</button>
+                    <div class="formulario__grupo">
+                        <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -156,7 +164,7 @@
                 <a id="mar" href="https://github.com/marticuadrado">
                     Martina Cuadrado
                 </a>
-                <a id="mel" href="#">
+                <a id="mel" href="https://github.com/Gerry080699">
                     <p>Melany Gerry</p>
                 </a>
                 <a id="sha" href="https://github.com/SharonOrmachea">Sharon Ormachea</a>
