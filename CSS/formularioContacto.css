@@ -96,8 +96,6 @@
         font-family: 'Montserrat', sans-serif;
         padding: 1%;
         color: #033750;
-        display: flex;
-        flex-direction: column;
         border-radius: 10px;
     }  
 
@@ -106,34 +104,52 @@
         font-size: 20px;
         margin-bottom: 4% ;
         text-align: center;
-        
     }
 
-    .campos{
-        margin: 1% 0 1% 0;
+    .campoObligatorio{
+        margin: 1% 0 5% 0;
         font-size: 20px;
-        text-align: center;
+        text-align: start;
     }
 
-    .name{
-        margin: 1% 0 1% 0;
+    .formulario__grupo{
+        margin: 1% 0 2% 0;
+        font-size: 20px;
+        padding-left: 25%;
+    }
+
+    .fomulario__label{
+        margin-bottom: 2%;
         text-align: left;
     }
 
-    .input{
+    .formulario__input{
         border: 2px solid #033750;
         padding: 1%;
+        width: 72%;
+
     }
 
     .textarea{
         border: 2px solid #033750;
         padding: 1%;
+        resize: none;
+    }
+
+    .selectText{
+        border: 2px solid #033750;
+        padding: 1%;
+        width: 72%;
     }
 
     .btn-primary {
         background-color: #033750;
         color: #fef5c8;
         border-color: #033750;
+        font-size: 100%;
+        padding: 3% 12%;
+        margin-top: 3%;
+        margin-left: 15%;
     }
     .btn-primary:hover,
     .btn-primary:focus,
@@ -142,8 +158,32 @@
         color: #FFF;
         border-color: #e74115;
     }
-  
 
+
+    /* -------------- Estilos para la validacion -----------*/
+  
+    .formulario__grupo-correcto .formulario__validacion-estado{
+        color: green;
+        opacity: 1;
+        z-index: 2;
+    }
+
+    .formulario__grupo-correcto .fomulario__label{
+        color: green;
+    }
+
+    .formulario__grupo-incorrecto .fomulario__label{
+        color: red;
+    }
+
+    .formulario__grupo-incorrecto .formulario__validacion-estado{
+        color: red;
+        opacity: 1;
+    }
+
+    .formulario__grupo-incorrecto .formulario__input{
+        border: 3px solid red;
+    }
     
 
     /*-------------------------------------------------------------------------------------------------
