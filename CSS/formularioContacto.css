@@ -27,13 +27,12 @@
     }
 
     .redes {
-        /*background-color: blue;*/
+        
         display: inline;
        
     }
 
     .redes-img {
-        /*background-color: pink;*/
         height: 5.5em;
         width: auto;
         padding: 1em;
