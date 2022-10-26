@@ -27,9 +27,7 @@
     }
 
     .redes {
-        
         display: inline;
-       
     }
 
     .redes-img {
@@ -53,18 +51,19 @@
             font-size: 35px;
             color:#fef5c8;
         }
-    }
+    } 
 
     /*-------------------------------------------------------------------------------------------------
     Cuerpo de la Página*/
 
     body{
-        background-image: url('/Imagenes/fondos/fondo1-3.png');
+        background-image: url('../Imagenes/fondos/fondo1-3.png');
         background-attachment: fixed;
         background-size:cover;
         background-repeat: no-repeat;
         position: relative;
         z-index: -2;
+        
     }
 
     .titulos{
@@ -129,6 +128,12 @@
 
     }
 
+    .formulario__input__obligatorio{
+        border: 2px solid #033750;
+        padding: 1%;
+        width: 72%;
+    }
+
     .textarea{
         border: 2px solid #033750;
         padding: 1%;
@@ -150,6 +155,7 @@
         margin-top: 3%;
         margin-left: 15%;
     }
+
     .btn-primary:hover,
     .btn-primary:focus,
     .btn-primary:active    {
@@ -158,13 +164,10 @@
         border-color: #e74115;
     }
 
-
     /* -------------- Estilos para la validacion -----------*/
   
-    .formulario__grupo-correcto .formulario__validacion-estado{
+    .formulario__grupo-correcto{
         color: green;
-        opacity: 1;
-        z-index: 2;
     }
 
     .formulario__grupo-correcto .fomulario__label{
@@ -175,12 +178,11 @@
         color: red;
     }
 
-    .formulario__grupo-incorrecto .formulario__validacion-estado{
+    .formulario__grupo-incorrecto{
         color: red;
-        opacity: 1;
     }
 
-    .formulario__grupo-incorrecto .formulario__input{
+    .formulario__grupo-incorrecto .formulario__input__obligatorio .formulario__input__obligatorio{
         border: 3px solid red;
     }
     
@@ -249,6 +251,76 @@
     }
 }
 
+@media(max-width: 720px){
 
+    /* Codigo del Main */
+    .titulos{
+        margin-right: 24%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .contenedor{
+        margin-left: 8%;
+        width: 60%;
+    }
+
+    .formulario__grupo{
+        padding-left: 15%;
+    }
+
+    .formulario__input, .formulario__input__obligatorio, .selectText{
+        border: 2px solid #033750;
+        padding: 1%;
+        width: 87%;
+    }
+
+    .textarea{
+        width: 87%;
+    }
+
+    .btn-primary{
+        margin-left: 23%;
+    }
+}
+
+
+@media(max-width: 480px){
+
+    
+
+    /* Codigo del Main */
+
+    .titulos{
+        margin-left: 5%;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .contenedor{
+        margin-left: 12%;
+        width: 80%;
+    }
+
+    .formulario__grupo{
+        padding-left: 15%;
+    }
+
+    .formulario__input, .formulario__input__obligatorio, .selectText{
+        border: 2px solid #033750;
+        padding: 1%;
+        width: 87%;
+    }
+
+    .btn-primary{
+        margin-left: 20%;
+    }
+}
 
 
