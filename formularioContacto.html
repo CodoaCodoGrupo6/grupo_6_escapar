@@ -15,164 +15,135 @@
     </head>
     <body>
         <header>
-            <section class="grid-header">
-
-                <div class="logo">
-                    <a href="./index.html">
-                        <img class="logo-img" src="Imagenes/logos/logo-escapAR-final2.png" alt="logo">
-                    </a>
-                </div>
-
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Imagenes/logos/logo-escapAR-final2.png" alt="logo">
+                </a>
+            </div>
+            <div class="redes">
                 <ul>
-
-                    <li class="redes"> 
-                        <a href="#" >
-                            <img class="redes-img" src="Imagenes/logos/logo-wp.png" alt="whatsapp" id="whats">
+                    <li>
+                        <a href="#">
+                            <img src="imagenes/logos/logo-wp.png">
                         </a>
                     </li>
-                    
-                    <li class="redes">
-                        <a href="#" id="ins"> 
-                            <img class="redes-img" src="Imagenes/logos/logo-ig.png" alt="instagram">
+                    <li>
+                        <a href="#">
+                            <img src="imagenes/logos/logo-ig.png">
                         </a>
                     </li>
-                    
-                    <li class="redes">
-                        <a href="#" id="tw">
-                            <img class="redes-img" src="Imagenes/logos/logo-tw.png" alt="twitter">
+                    <li>
+                        <a href="#">
+                            <img src="imagenes/logos/logo-tw.png">
                         </a>
                     </li>
-
-                    <li class="redes">
-                        <a href="#" id="you">
-                            <img class="redes-img" src="Imagenes/logos/logo-yt.png" alt="youtube">
+                    <li>
+                        <a href="#">
+                            <img src="imagenes/logos/logo-yt.png">
                         </a>
                     </li>
-
                 </ul>
-                
-                <a href="formularioContacto.html" class="form" id="form">Contacto</a>
-
-            </section>
-
+            </div>
+            
         </header>
 
         <main>
-
-            <div class="titulos">
+            <section class="titulos">
                 <h1>Formulario de Contacto</h1>
-            </div>
-
-            <section class="contenedor">
-
-                <div class="titulo-form">
-                    <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
-                </div>
-
-                <div class="cuerpo-form">
-                    <!-- API dentro de la etiqueta "form"(action y method), con esta API cada vez que alguien llene el formulario y envie los datos me va a llegar al mail (Sharon) los datos del formulario que completo dicha persona   -->
-                    <form class="formulario" id="formulario" action="https://formspree.io/f/mrgdyqzo" method="POST">
-
-                        <div class="campoObligatorio">
-                            <p>
-                                <span class="obligatorio">*</span>
-                                Los campos son obligatorios
-                            </p>
-                        </div>
-                        <!-- Nombre -->
-                        <div class="formulario__grupo" id="campo-nombre">
-                            <label class="fomulario__label">Nombre
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input__obligatorio" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                            </div>
-                        </div>
-
-                        <!-- Apellido -->
-                        <div class="formulario__grupo" id="campo-apellido">
-                            <label class="fomulario__label">Apellido
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" name="apellido" class="formulario__input__obligatorio" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
-                            </div>
-                        </div>
-
-                        <!-- E-mail -->
-                        <div class="formulario__grupo" id="campo-email">
-                            <label class="fomulario__label">E-mail
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" name="email" class="formulario__input__obligatorio" id="email" required="obligatorio" placeholder="Escribe tu email">
-                            </div>
-                        </div>
-
-                        <!-- Telefono -->
-                        <div class="formulario__grupo" id="campo-telefono">
-                            <label class="fomulario__label">Telefono
-                                <span class="obligatorio">*</span>
-                            </label><br>
-                            <div class="formulario__grupo-input">
-                                <input type="text" name="telefono" class="formulario__input__obligatorio" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">
-                            </div>
-                        </div>
-
-                        <!-- Selector Paquete de Viajes -->
-                        <div class="formulario__grupo" id="campo-paquete">
-                            <label class="fomulario__label">Paquete de Viaje</label>
-                            <div class="formulario__grupo-select">
-                                <select id="selectText" class="selectText" name="destiny" required="obligatorio" placeholder="Escribe tu telefono">
-                                    <option disabled selected value="selection">Seleccione un paquete</option>
-                                    <option value="cordoba">Córdoba</option>
-                                    <option value="mendoza">Mendoza</option>
-                                    <option value="patagonia">Patagonia</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <!-- Asunto -->
-                        <div class="formulario__grupo" id="campo-asunto">
-                            <label class="fomulario__label">Asunto</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" name="asunto" class="formulario__input" required="obligatorio" placeholder="Escribe tu nombre">
-                            </div>
-                        </div>
-
-                        <!-- Mensaje -->
-                        <div class="formulario__grupo" id="campo-mensaje">
-                            <label class="fomulario__label">Mensaje</label>
-                            <div class="formulario__grupo-text">
-                                <textarea type="text" name="mensaje" class="textarea" required="obligatorio" placeholder="Escribe tu mensaje..." rows="6" cols="23"></textarea>
-                            </div>
-                        </div>
-
-                        <!-- Boton de Enviar -->
-                        <div class="formulario__grupo">
-                            <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-
             </section>
+            <section class="contenedor">
+                <h3>Escribenos y en breve nos pondremos en contacto contigo</h3>
 
+                <!-- API dentro de la etiqueta "form"(action y method), con esta API cada vez que alguien llene el formulario y envie los datos me va a llegar al mail (Sharon) los datos del formulario que completo dicha persona   -->
+                <form class="formulario" id="formulario" action="https://formspree.io/f/mrgdyqzo" method="POST">
+        
+                    <div class="formulario__grupo" id="campo-nombre">
+                        <label class="fomulario__label">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input__obligatorio" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </div>
+                    </div>
+
+                    <!-- Apellido -->
+                    <div class="formulario__grupo" id="campo-apellido">
+                        <label class="fomulario__label">Apellido
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="apellido" class="formulario__input__obligatorio" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="formulario__grupo" id="campo-email">
+                        <label class="fomulario__label">E-mail
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="email" class="formulario__input__obligatorio" id="email" required="obligatorio" placeholder="Escribe tu email">
+                        </div>
+                    </div>
+
+                    <!-- Telefono -->
+                    <div class="formulario__grupo" id="campo-telefono">
+                        <label class="fomulario__label">Telefono
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="telefono" class="formulario__input__obligatorio" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">
+                        </div>
+                    </div>
+
+                    <!-- Selector Paquete de Viajes -->
+                    <div class="formulario__grupo" id="campo-paquete">
+                        <label class="fomulario__label">Paquete de Viaje</label>
+                        <div class="formulario__grupo-select">
+                            <select id="selectText" class="selectText" name="destiny" required="obligatorio" placeholder="Escribe tu telefono">
+                                <option disabled selected value="selection">Seleccione un paquete</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="mendoza">Mendoza</option>
+                                <option value="patagonia">Patagonia</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Asunto -->
+                    <div class="formulario__grupo" id="campo-asunto">
+                        <label class="fomulario__label">Asunto</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" name="asunto" class="formulario__input"  placeholder="Escribe un asunto">
+                        </div>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="formulario__grupo" id="campo-mensaje">
+                        <label class="fomulario__label">Mensaje</label>
+                        <div class="formulario__grupo-text">
+                            <textarea type="text" name="mensaje" class="textarea"  placeholder="Escribe tu mensaje..." rows="6" cols="23"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Boton de Enviar -->
+                    <div class="formulario__grupo">
+                        <button type="submit" class="btn btn-primary" onclick="validarFormulario()">Enviar</button>
+                    </div>
+                </form>
+
+                <p>
+                    <span class="obligatorio">*</span>
+                    Los campos son obligatorios
+                </p>
+            </section>
         </main>
 
         <footer>
-            <section class="desarrolladores">
-                <div>
-                    <h5>Desarrollado por:</h5>
-                </div>
-                <a id="mar" href="https://github.com/marticuadrado">
-                    Martina Cuadrado
-                </a>
-                <a id="mel" href="https://github.com/Gerry080699">
-                    <p>Melany Gerry</p>
-                </a>
-                <a id="sha" href="https://github.com/SharonOrmachea">Sharon Ormachea</a>
-            </section>
+            <h3>Desarrollado por:</h3>
+            <a class="mar" href="https://github.com/marticuadrado">Martina Cuadrado</a>
+            <a class="mel" href="https://github.com/Gerry080699">Melany Gerry</a>
+            <a class="sha" href="https://github.com/SharonOrmachea">Sharon Ormachea</a>
         </footer>
-
+        
     </body>
 </html>

@@ -1,9 +1,5 @@
 const formulario = document.getElementById("formulario");
-const inputNombre = document.getElementById("nombre");
-const inputApellido = document.getElementById("apellido");
-const inputEmail = document.getElementById("email");
-const inputTelefono = document.getElementById("telefono");
-const inputs = [];
+const inputs = document.getElementsByClassName("formulario__input__obligatorio");
 
 // Expresiones regulares
 // "/^" indica donde empieza y "$/" indica donde termina
@@ -46,24 +42,12 @@ const validarFormulario = (event) => {
 
 const validarCampo = (expresion, input, campo) => {
     if(expresion.nomObligatorio.test(input.value)){
-        document.getElementById(`campo-nombre`).classList.remove("formulario__grupo-incorrecto");
-        document.getElementById(`campo-nombre`).classList.add("formulario__grupo-correcto");
-        document.getElementById(`campo-apellido`).classList.remove("formulario__grupo-incorrecto");
-        document.getElementById(`campo-apellido`).classList.add("formulario__grupo-correcto");
-        document.getElementById(`campo-email`).classList.remove("formulario__grupo-incorrecto");
-        document.getElementById(`campo-email`).classList.add("formulario__grupo-correcto");
-        document.getElementById(`campo-telefono`).classList.remove("formulario__grupo-incorrecto");
-        document.getElementById(`campo-telefono`).classList.add("formulario__grupo-correcto");
+        document.getElementById(`campo-${campo}`).classList.remove("formulario__grupo-incorrecto");
+        document.getElementById(`campo-${campo}`).classList.add("formulario__grupo-correcto");
         campos[campo] = true;
     } else{
-        document.getElementById(`campo-nombre`).classList.add("formulario__grupo-incorrecto");
-        document.getElementById(`campo-nombre`).classList.remove("formulario__grupo-correcto");
-        document.getElementById(`campo-apellido`).classList.add("formulario__grupo-incorrecto");
-        document.getElementById(`campo-apellido`).classList.remove("formulario__grupo-correcto");
-        document.getElementById(`campo-email`).classList.add("formulario__grupo-incorrecto");
-        document.getElementById(`campo-email`).classList.remove("formulario__grupo-correcto");
-        document.getElementById(`campo-telefono`).classList.add("formulario__grupo-incorrecto");
-        document.getElementById(`campo-telefono`).classList.remove("formulario__grupo-correcto");
+        document.getElementById(`campo-${campo}`).classList.add("formulario__grupo-incorrecto");
+        document.getElementById(`campo-${campo}`).classList.remove("formulario__grupo-correcto");
         campos[campo] = false;
     }
 }
