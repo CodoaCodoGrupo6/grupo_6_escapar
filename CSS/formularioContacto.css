@@ -150,25 +150,6 @@
         }
     }
 
-    .formulario__grupo-correcto{
-        color: green;
-    }
-
-    .formulario__grupo-correcto .fomulario__label{
-        color: green;
-    }
-
-    .formulario__grupo-incorrecto .fomulario__label{
-        color: red;
-    }
-
-    .formulario__grupo-incorrecto{
-        color: red;
-    }
-
-    .formulario__grupo-incorrecto .formulario__input__obligatorio .formulario__input__obligatorio{
-        border: 3px solid red;
-    }
     
     /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
     /* Codigo del Footer */

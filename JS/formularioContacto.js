@@ -1,6 +1,6 @@
 const formulario = document.getElementById("formulario");
 const inputs = document.getElementsByClassName("formulario__input__obligatorio");
-
+console.log(inputs)
 // Expresiones regulares
 // "/^" indica donde empieza y "$/" indica donde termina
 // ["a-z"] indica que toma letras de la "a" a la "z" minusculas
