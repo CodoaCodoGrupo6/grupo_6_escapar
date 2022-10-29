@@ -1,16 +1,14 @@
 @media (max-width: 1920px){
     /* Encabezado */
-    header{
+    header .contenedor-1{
         background-color: #e74115;
         position: fixed;
         top: 0;
         height: 8em;
         width: 100%;
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        gap: 15%;
     }
 
     .logo img{
@@ -18,17 +16,13 @@
     }
 
     .redes{
-        padding: 0 5%;
+        display: flex;
+        justify-content: space-around;
     }
 
     .redes img{
-        height: 3.5em;
-    }
-
-    .redes ul{
-        display: flex;
-        justify-content: space-around;
-        gap: 20%;
+        height: 4em;
+        margin-left: 3em;
     }
 
     /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -46,6 +40,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
         gap: 5em;
     }
 
@@ -64,7 +59,7 @@
         margin-top: 2em;
     }
 
-    .contenedor{
+    .contenedor-2{
         display: flex;
         flex-direction: column;
         margin: 0% 35% 5%;
@@ -199,18 +194,70 @@
             color:#fef5c8;
         }
 
-        :link {
-            text-decoration: none;
-            color:#fef5c8;
-        }
-    
-        :visited {
-            text-decoration: none;
-            color:#fef5c8;
-        }
         :hover{
             text-decoration-style: wavy;
         }
     }
 
+    :link {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+
+    :visited {
+        text-decoration: none;
+        color:#fef5c8;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Media Query para Tablet */
+
+@media(max-width: 720px){
+
+    /* Encabezado */
+
+    .redes img{
+        margin-left: 1em;
+    }
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* cuerpo de la pagina */
+
+    .contenedor-2{
+        margin: 0% 15% 5%;
+    }
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Codigo del Footer */
+
+    footer{
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 5%;
+    }
+
+    footer h3{
+        font-size: 2em;
+    }
+
+    footer .mar, .sha, .mel{
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Media Query para Celular */
+
+@media(max-width: 480px){
+
+    /* cuerpo de la pagina */
+
+    .contenedor-2{
+        margin: 0% 8% 5%;
+    }
+    
 }

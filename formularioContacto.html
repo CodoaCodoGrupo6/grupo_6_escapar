@@ -15,35 +15,33 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <a href="index.html">
+            <div class="contenedor-1">
+                
+                <a class="logo" href="index.html">
                     <img src="Imagenes/logos/logo-escapAR-final2.png" alt="logo">
                 </a>
+                
+                <nav class="redes">
+
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-wp.png">
+                    </a>
+                
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-ig.png">
+                    </a>
+
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-tw.png">
+                    </a>  
+                        
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-yt.png">
+                    </a>
+                    
+                </nav>
             </div>
-            <div class="redes">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="imagenes/logos/logo-wp.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="imagenes/logos/logo-ig.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="imagenes/logos/logo-tw.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="imagenes/logos/logo-yt.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
             
         </header>
 
@@ -51,12 +49,13 @@
             <section class="titulos">
                 <h1>Formulario de Contacto</h1>
             </section>
-            <section class="contenedor">
+            <section class="contenedor-2">
                 <h3>Escribenos y en breve nos pondremos en contacto contigo</h3>
 
                 <!-- API dentro de la etiqueta "form"(action y method), con esta API cada vez que alguien llene el formulario y envie los datos me va a llegar al mail (Sharon) los datos del formulario que completo dicha persona   -->
                 <form class="formulario" id="formulario" action="https://formspree.io/f/mrgdyqzo" method="POST">
-        
+                    
+                    <!-- Nombre -->
                     <div class="formulario__grupo" id="campo-nombre">
                         <label class="fomulario__label">Nombre
                             <span class="obligatorio">*</span>
