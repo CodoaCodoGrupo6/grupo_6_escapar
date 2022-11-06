@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/formularioContacto.css">
         <script defer src="JS/formularioContacto.js"></script>
+        <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <header>
@@ -40,9 +41,7 @@
                     </a>
                     
                 </nav>
-            </div>
-
-            
+            </div>          
         </header>
 
         <main>
@@ -57,42 +56,46 @@
                     
                     <!-- Nombre -->
                     <div class="formulario__grupo" id="campo-nombre">
-                        <label class="fomulario__label">Nombre
-                            <span class="obligatorio">*</span>
+                        <label class="formulario__label">Nombre
+                            <span class="obligatorio"></span>
                         </label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input__obligatorio" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            <input type="text" name="nombre" class="formulario__input formulario__input__obligatorio"  id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
                         </div>
+                        <p class="formulario__input-error">El nombre debe tener entre 3 y 40 caracteres y no debe<br>contener numeros ni caracteres especiales</p>
                     </div>
 
                     <!-- Apellido -->
                     <div class="formulario__grupo" id="campo-apellido">
-                        <label class="fomulario__label">Apellido
-                            <span class="obligatorio">*</span>
+                        <label class="formulario__label">Apellido
+                            <span class="obligatorio"></span>
                         </label>
                         <div class="formulario__grupo-input">
-                            <input type="text" name="apellido" class="formulario__input__obligatorio" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
+                            <input type="text" name="apellido" class="formulario__input formulario__input__obligatorio" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
                         </div>
+                        <p class="formulario__input-error">El apellido debe tener entre 3 y 40 caracteres y no debe<br>contener numeros ni caracteres especiales</p>
                     </div>
 
                     <!-- E-mail -->
                     <div class="formulario__grupo" id="campo-email">
-                        <label class="fomulario__label">E-mail
-                            <span class="obligatorio">*</span>
+                        <label class="formulario__label">E-mail
+                            <span class="obligatorio"></span>
                         </label>
                         <div class="formulario__grupo-input">
-                            <input type="text" name="email" class="formulario__input__obligatorio" id="email" required="obligatorio" placeholder="Escribe tu email">
+                            <input type="text" name="email" class="formulario__input formulario__input__obligatorio" id="email" required="obligatorio" placeholder="Escribe tu email">
                         </div>
+                        <p class="formulario__input-error">Ingrese un formato de mail valido</p>
                     </div>
 
                     <!-- Telefono -->
                     <div class="formulario__grupo" id="campo-telefono">
-                        <label class="fomulario__label">Telefono
-                            <span class="obligatorio">*</span>
+                        <label class="formulario__label">Telefono
+                            <span class="obligatorio"></span>
                         </label>
                         <div class="formulario__grupo-input">
-                            <input type="text" name="telefono" class="formulario__input__obligatorio" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">
+                            <input type="text" name="telefono" class="formulario__input formulario__input__obligatorio" id="telefono" required="obligatorio" placeholder="Escribe tu telefono">
                         </div>
+                        <p class="formulario__input-error">El telefono debe tener entre 7 y 14 números y no puede<br>contener caracteres especiales</p>
                     </div>
 
                     <!-- Selector Paquete de Viajes -->
@@ -110,7 +113,7 @@
 
                     <!-- Asunto -->
                     <div class="formulario__grupo" id="campo-asunto">
-                        <label class="fomulario__label">Asunto</label>
+                        <label class="formulario__label">Asunto</label>
                         <div class="formulario__grupo-input">
                             <input type="text" name="asunto" class="formulario__input"  placeholder="Escribe un asunto">
                         </div>
@@ -118,7 +121,7 @@
 
                     <!-- Mensaje -->
                     <div class="formulario__grupo" id="campo-mensaje">
-                        <label class="fomulario__label">Mensaje</label>
+                        <label class="formulario__label">Mensaje</label>
                         <div class="formulario__grupo-text">
                             <textarea type="text" name="mensaje" class="textarea"  placeholder="Escribe tu mensaje..." rows="6" cols="23"></textarea>
                         </div>
@@ -135,6 +138,8 @@
                     Los campos son obligatorios
                 </p>
             </section>
+
+            
         </main>
 
         <footer>

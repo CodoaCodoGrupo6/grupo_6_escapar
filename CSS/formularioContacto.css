@@ -72,11 +72,6 @@
         gap: 3em;
     }  
 
-    .contenedor p{
-        text-align: justify;
-        font-size: 20px;
-    }
-
     h3{
         font-weight: bolder;
         font-size: 20px;
@@ -136,16 +131,44 @@
     }
 
     @media (hover: hover){
-        .btn-primary:hover,
-        .btn-primary:focus,
-        .btn-primary:active{
+        .btn-primary:hover{
             background-color: #e74115;
             color: #FFF;
             border-color: #e74115;
         }
+        
     }
 
-    
+    .btn-primary:focus,
+    .btn-primary:active{
+        background-color: #e74115;
+        color: #FFF;
+        border-color: #e74115;
+    }
+
+    /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+    /* Codigo de Validacion */
+
+    .formulario__input-error {
+        font-size: 12px;
+        margin-bottom: 0;
+        display: none;
+        color: #bb2929;
+    }
+
+    .formulario__input-error-activo {
+        display: block;
+    }
+
+    .formulario__grupo-incorrecto .formulario__label{
+        color: #bb2929;
+        opacity: 1
+    }
+
+    .formulario__grupo-incorrecto .formulario__input{
+        border: 5px solid #bb2929;
+    }
+
     /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
     /* Codigo del Footer */
 
@@ -178,7 +201,7 @@
         
         .mar:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2em;
+            font-size: 2.5em;
             color:#fef5c8;
         }
     
