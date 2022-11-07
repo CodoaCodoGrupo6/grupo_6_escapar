@@ -201,19 +201,16 @@
         
         .mar:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2.5em;
             color:#fef5c8;
         }
     
         .mel:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2em;
             color:#fef5c8;
         }
     
         .sha:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2em;
             color:#fef5c8;
         }
 
