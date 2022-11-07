@@ -1,45 +1,38 @@
 @media (max-width: 1920px){
+
     /*Encabezado de la Página*/
 
-    .grid-header {
+    header {
         background-color: #e74115;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3,40em);
-        grid-template-rows: repeat(1,8em);
-        align-items: center;
         position: fixed;
+        top: 0;
+        height: 8em;
+        width: 100%;
         z-index: 2;
     }
 
-    .logo { 
+    .contenedor-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo img{
+        width: 7em;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .redes img{
+        height: 4em;
         margin-left: 3em;
     }
 
-    .logo-img { 
-        width: 15%;
-    }
-
-    .grid-header ul {
-        display: flex;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-
-    .redes {
-        /*background-color: blue;*/
-        display: inline;
-       
-    }
-
-    .redes-img {
-        /*background-color: pink;*/
-        height: 3.5em;
-        width: auto;
-        padding: 1em;
-    }
-
-    .form{
+    .formulario{
+        width: 5em;
         font-size: 30px;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
@@ -60,32 +53,37 @@
     Cuerpo de la Página*/
 
     body{
-        background-image: url('/Imagenes/fondos/fondo1-3.png');
+        background-image: url('../Imagenes/fondos/fondo1-3.png');
         background-attachment: fixed;
         background-size:cover;
         background-repeat: no-repeat;
         position: relative;
-        z-index: -2;
     }
 
-    .titulos{
-        font-family: 'Montserrat', sans-serif;
+    main{
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
+        gap: 3em;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .titulos{
+        display: flex;
+        flex-direction: column;
         font-weight: bold;
         color:#fef5c8;
         text-shadow: 2px 5px 10px black;
         padding-top: 10em;
-        padding-bottom: 3em;
-        
+        gap: 2em;
     }
 
     h1{
         font-size: 80px;
         letter-spacing: 2px;
-        margin-bottom: 20px;
         z-index: -1;
     }
 
@@ -95,64 +93,46 @@
         z-index: -1;
     }
     
-    /*--------------------------------------------------------------------------*/
-    /* Codigo de la parte de Destinos */
+    /*--------------------------------------------------------------------------/
+    / Codigo de la parte de Destinos */
 
     .destinos {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
+        width: 100%;
         height: 35em;
         padding-bottom: 5em;
         
     }
 
-    .d1 {
-        justify-content: space-around;
-        background-image: url(../Imagenes/destinos/cordoba1.png);
-        background-size: 100%;
-        background-repeat: round;
-        outline: #033750 auto thin;
-        padding: auto;
+    .caja{
         width: 30em;
+        outline: #033750 auto thin;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
     }
 
-    .d2 {
-        justify-content: space-around;
-        background-image: url(../Imagenes/destinos/mendoza1.png);
-        outline: #033750 auto thin;
-        background-size: 100%;
-        background-repeat: round;
-        width: 30em;
+    .d1 p{
+        position: absolute;
+        top: 10em;
+        left: 2em;
     }
 
-    .d3 {
-        justify-content: space-around;
-        background-image: url(../Imagenes/destinos/patagonia2.png);
-        outline: #033750 auto thin;
-        background-size: 100%;
-        background-repeat: round;
-        width: 30em;
+    .d2 p{
+        position: absolute;
+        left: 2em;
     }
     
     .textoDestino{
-        display: flex;
-        justify-content: space-around;
         font-family: 'Montserrat', sans-serif;
         font-size: 50px;
         font-weight: bolder;
         color: #fef5c8;
         text-shadow: 5px 5px 3px #000000;
-        margin: 4%;
         padding: 0.2em;
-        position: relative;
-    }
-
-    .cor{
-        top: 80%;
-    }
-
-    .pat{
-        top: 80%;
     }
 
     @media (hover: hover){
@@ -160,92 +140,76 @@
         #d1:hover{
             box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
             border-color: #ffffff;
-            
-            
         }
     
         #d2:hover{
             box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
             border-color: #ffffff;
-            
         }
     
         #d3:hover{
             box-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #000000;
             border-color: #ffffff;
-            
         }
     }
 
-    /*-----------------------------------------------------------*/
-    /* Codigo Section "Sobre Nosotros" */
+    /*-----------------------------------------------------------/
+    / Codigo Section "Sobre Nosotros" */
 
     .SobreNosotros{
-        top: 1060%;
-        left: 1%;
-        margin: 10px 180px 10px 225px;
+        width: 80%;
         background-color: #fef5c8;
         border: 5px solid #00988c;
-        font-family: 'Montserrat', sans-serif;
-        padding: 2%;
         color: #033750;
+        padding: 2%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        flex-wrap: wrap;
-        margin-bottom: 5em;
+        gap: 2em;
     }  
 
-    h3{
+    .SobreNosotros h3{
         font-weight: bolder;
         font-size: 50px;
-        margin-bottom: 4% ;
         text-align: center;
-        
     }
 
     .textoSobreNosotros{
         font-size: 30px;
+        text-align: justify;
     }
 
     /* ---------------------------------------------------------------------- */
     /* Codigo de Section "Donde Estamos" */
 
     .DondeEstamos{
+        width: 80%;
         display: flex;
         justify-content: space-around;
         background-color: #fef5c8;
         border: 5px solid #00988c;
-        margin: 5px 180px 10px 225px;
         padding: 2%;
-        flex-wrap: wrap;
         margin-bottom: 5em;
     }
 
     .Donde{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        font-family: 'Montserrat', sans-serif;
-        align-items: center;
+        justify-content: space-around;
         color: #033750;
-
     }
 
     .Donde h4{
         font-size: 3em;
         font-weight: bold;
-        margin: 10px;
     }
 
     .Donde p{
         font-size: 2em;
-        margin: 10px;
     }
 
     .Mapa{
         box-shadow: 1px 1px 20px #000000;
-        margin: 10px;
     }
 
     .mapa1{
@@ -256,47 +220,61 @@
     /*-------------------------------------------------------------------------------------------------
     Pie de Página*/
 
-    .desarrolladores {
+    footer{
         background-color: #e74115;
-        position: relative;
-        z-index: 2;
-        font-family: 'Montserrat', sans-serif;
-        display: grid;
-        grid-template-columns: repeat(4,25em);
-        grid-template-rows: repeat(1,5em);
+        display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        color:#fef5c8;
-        text-shadow: 2px 2px 4px black;
+        gap: 10%;
+        z-index: 2;
+        padding: 2em;
     }
-    
-    footer h5{
-        font-size: 2em;
-        font-weight: bold;
+
+    footer h3{
+        color:#fef5c8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5em;
         text-shadow: 3px 3px 3px #000000;
     }
 
-    footer a {
-        font-size: 1.5em;
+    .redes2{
+        display: none;
+        justify-content: space-around;
+        margin-right: 3em;
+    }
+
+    .redes2 img{
+        height: 4em;
+        margin-left: 3em;
+    }
+
+    footer .mar, .sha, .mel{
+        color:#fef5c8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2em;
         text-shadow: 3px 3px 3px #000000;
-        text-align: center;
     }
 
     @media (hover: hover){
         
-        #mar:hover{
+        .mar:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2em;
+            color:#fef5c8;
         }
     
-        #mel:hover{
+        .mel:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2em;
+            color:#fef5c8;
         }
     
-        #sha:hover{
+        .sha:hover{
             text-shadow: 0 0 10px #000000, 0 0 40px #000000, 0 0 80px #ffffff;
-            font-size: 2em;
+            color:#fef5c8;
+        }
+
+        :hover{
+            text-decoration-style: wavy;
         }
     }
 
@@ -312,6 +290,193 @@
 
 }
 
+@media (max-width: 1280px){ /*720*/
+    /* encabezado de la pagina */
+
+    header .contenedor-1{
+        background-color: #e74115;
+        position: fixed;
+        top: 0;
+        height: 8em;
+        width: 85%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo img{
+        width: 5em;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    .formulario{
+        width: 1em;
+    }
 
 
+    /* cuerpo de la pagina */
 
+    .destinos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        gap: 2em;
+    }
+
+    .caja{
+        width: 30em;
+        outline: #033750 auto thin;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .d1 p{
+        position: absolute;
+        top: 10em;
+        left: 2em;
+    }
+
+    .d2 p{
+        position: absolute;
+        left: 2em;
+    }
+
+        
+    .DondeEstamos{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fef5c8;
+        border: 5px solid #00988c;
+        padding: 2%;
+        gap: 2em;
+    }
+
+    .Donde{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #033750;
+        gap: 2em;
+    }
+
+    .Donde h4{
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .Donde p{
+        font-size: 2em;
+    }
+
+    .Mapa{
+        box-shadow: 1px 1px 20px #000000;
+        width: 30em;
+    }
+
+    .mapa1{
+        flex-shrink: 5;
+        width: 30em;
+    }
+
+    /* pie de la pagina */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2em;
+        z-index: 2;
+        padding: 2em;
+    }
+
+    .redes2{
+        display: flex;
+    }
+
+}
+
+@media(max-width: 620px){ /*480*/
+
+    /* cuerpo de la pagina */
+
+    main{
+        height: 190em;
+    }
+
+    .caja{
+        width: 26em;
+    }
+
+    .d1 p{
+        top: 8em;
+        left: 1.3em;
+    }
+
+    .d2 p{
+        left: 1.3em;
+    }
+
+    .SobreNosotros h3{
+        font-size: 40px;
+    }
+
+    .textoSobreNosotros{
+        font-size: 25px;
+    }
+
+        
+    .DondeEstamos{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fef5c8;
+        border: 5px solid #00988c;
+        padding: 2%;
+        margin-bottom: 5em;
+        gap: 2em;
+    }
+
+    .Donde{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #033750;
+        gap: 2em;
+    }
+
+    .Donde h4{
+        font-size: 2em;
+    }
+
+    .Donde p{
+        font-size: 1.5em;
+    }
+
+    .Mapa{
+        width: 15em;
+    }
+
+    .mapa1{
+        width: 15em;
+        height: 15em;
+    }
+
+    /* pie de la pagina */
+
+    .redes2{
+        display: flex;
+    }  
+}

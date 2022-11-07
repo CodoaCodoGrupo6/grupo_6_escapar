@@ -13,45 +13,37 @@
     </head>
     <body>
         <header>
-            <section class="grid-header">
-
-                <div class="logo">
-                    <a href="./index.html">
-                        <img class="logo-img" src="Imagenes/logos/logo-escapAR-final2.png" alt="logo">
-                    </a>
-                </div>
-
-                <ul>
-
-                    <li class="redes"> 
-                        <a href="#" >
-                            <img class="redes-img" src="Imagenes/logos/logo-wp.png" alt="whatsapp" id="whats">
-                        </a>
-                    </li>
-                    
-                    <li class="redes">
-                        <a href="#" id="ins"> 
-                            <img class="redes-img" src="Imagenes/logos/logo-ig.png" alt="instagram">
-                        </a>
-                    </li>
-                    
-                    <li class="redes">
-                        <a href="#" id="tw">
-                            <img class="redes-img" src="Imagenes/logos/logo-tw.png" alt="twitter">
-                        </a>
-                    </li>
-
-                    <li class="redes">
-                        <a href="#" id="you">
-                            <img class="redes-img" src="Imagenes/logos/logo-yt.png" alt="youtube">
-                        </a>
-                    </li>
-
-                </ul>
+            <div class="contenedor-1">
                 
-                <a href="formularioContacto.html" class="form" id="form">Contacto</a>
+                <a class="logo" href="index.html">
+                    <img src="Imagenes/logos/logo-escapAR-final2.png" alt="logo">
+                </a>
+                
+                <nav class="redes">
 
-            </section>
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-wp.png">
+                    </a>
+                
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-ig.png">
+                    </a>
+
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-tw.png">
+                    </a>  
+                        
+                    <a class="redes-img" href="#">
+                        <img src="imagenes/logos/logo-yt.png">
+                    </a>
+                    
+                </nav>
+
+                <div class="formulario">
+                    <a href="formularioContacto.html" id="form">Contacto</a>
+                </div>
+                
+            </div>          
 
         </header>
 
@@ -64,16 +56,26 @@
 
             <section class="destinos">
                 
-                <a class="d1" id="d1" href="paqueteCordoba.html">
-                    <p class="cor textoDestino">CÓRDOBA</p>
+                <a href="paqueteCordoba.html">
+                    <div class="caja d1" id="d1">
+                        <img src="Imagenes/destinos/cordoba1.png" alt="cordoba"/>
+                        <p class="cor textoDestino">CÓRDOBA</p>
+                    </div>
                 </a>
 
-                <a class="d2" id="d2" href="paqueteMendoza.html">
-                    <p class="men textoDestino">MENDOZA</p>
+                <a href="paqueteMendoza.html">
+                    <div class="caja d2" id="d2">
+                        <img src="Imagenes/destinos/mendoza1.png" alt="mendoza"/>
+                        <p class="men textoDestino">MENDOZA</p>
+                    </div>
                 </a>
 
-                <a class="d3" id="d3" href="paquetePatagonia.html">
-                    <p class="pat textoDestino">PATAGONIA</p>
+                
+                <a href="paquetePatagonia.html">
+                    <div class="caja d1" id="d3">
+                        <img src="Imagenes/destinos/patagonia2.png" alt="patagonia">
+                        <p class="pat textoDestino">PATAGONIA</p>
+                    </div>
                 </a>
                 
             </section>
@@ -93,12 +95,10 @@
             <section class="DondeEstamos">
 
                 <div class="Donde">
-
                     <h4>¿Dónde estamos?</h4>
                     <p>Dirección: Av. Córdoba 1345</p>
                     <p>Telefono: +5491145879636</p>
-
-                </div>
+                </div> 
                 
                 <div class="Mapa">
                     <iframe class="mapa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2073565489477!2d-58.388288184236956!3d-34.59891776475235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac77f523739%3A0x86ae2e77c20b46a0!2sAv.%20C%C3%B3rdoba%201345%2C%20C1015%20CABA!5e0!3m2!1ses!2sar!4v1664493722716!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -109,18 +109,33 @@
         </main>
 
         <footer>
-            <section class="desarrolladores">
-                <div>
-                    <h5>Desarrollado por:</h5>
-                </div>
-                <a id="mar" href="https://github.com/marticuadrado">
-                    Martina Cuadrado
+
+            <nav class="redes2">
+
+                <a class="redes-img" href="#">
+                    <img src="imagenes/logos/logo-wp.png">
                 </a>
-                <a id="mel" href="https://github.com/Gerry080699">
-                    Melany Gerry
+            
+                <a class="redes-img" href="#">
+                    <img src="imagenes/logos/logo-ig.png">
                 </a>
-                <a id="sha" href="https://github.com/SharonOrmachea">Sharon Ormachea</a>
-            </section>
+
+                <a class="redes-img" href="#">
+                    <img src="imagenes/logos/logo-tw.png">
+                </a>  
+                    
+                <a class="redes-img" href="#">
+                    <img src="imagenes/logos/logo-yt.png">
+                </a>
+                
+            </nav>
+            
+            <h3>Desarrollado por:</h3>
+            
+            <a class="mar" href="https://github.com/marticuadrado">Martina Cuadrado</a>
+            <a class="mel" href="https://github.com/Gerry080699">Melany Gerry</a>
+            <a class="sha" href="https://github.com/SharonOrmachea">Sharon Ormachea</a>
+            
         </footer>
 
     </body>
